@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Dyestha</title>
+    <style>
+        /* Gaya Netral & Minimalis */
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            background-color: #ffffff;
+            padding: 30px;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        /* Gaya Foto Profil */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 1px solid #eee;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            margin: 0 0 5px 0;
+            color: #000;
+        }
+
+        .nim {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        .detail {
+            margin-bottom: 20px;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        .label {
+            font-weight: bold;
+            display: block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: #999;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+
+        .info-content {
+            font-size: 0.95rem;
+            color: #333;
+        }
+
+        /* Kontainer Peta agar Responsif */
+        .map-container {
+            margin-top: 10px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #eee;
+        }
+
+        iframe {
+            width: 100%;
+            height: 250px; /* Ukuran tinggi disesuaikan agar proporsional di kartu */
+            display: block;
+        }
+
+        a {
+            color: #000;
+            font-size: 0.85rem;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="foto_diri.jpeg" alt="Foto I Putu Dyestha Kencana Putra" class="profile-img">
+
+        <h1>I Putu Dyestha Kencana Putra</h1>
+        <span class="nim">NIM: 2413231024</span>
+
+        <div class="detail">
+            <span class="label">Kampus</span>
+            <div class="info-content">Universitas Hindu Negeri I Gusti Bagus Sugriwa Denpasar</div>
+        </div>
+
+        <div class="detail">
+            <span class="label">Lokasi Rumah (Maps)</span>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!4v1771573933756!6m8!1m7!1s0aDARBXZc-EBjoVC9T5h4w!2m2!1d-8.708614041033723!2d115.2238778400439!3f66.85518438953221!4f-22.70643523999496!5f0.7820865974627469" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <a href="https://maps.app.goo.gl/nPqJzDBJgFppp1bP7" target="_blank">
+                ↗ Buka di Tab Baru
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
