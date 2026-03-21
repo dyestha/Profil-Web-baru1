@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Kalkulator</title>
+
+<style>
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    margin: 0;
+}
+
+/* ANIMASI */
+@keyframes fadeSlideUp {
+    from {opacity:0; transform:translateY(30px);}
+    to {opacity:1; transform:translateY(0);}
+}
+
+/* NAVBAR */
+nav{
+    background:#1f2937;
+    padding:15px;
+    text-align:center;
+    animation: fadeSlideUp 0.6s;
+}
+
+nav a{
+    color:white;
+    margin:0 12px;
+    text-decoration:none;
+}
+
+/* CONTAINER */
+.container{
+    max-width:300px;
+    margin:40px auto;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    animation: fadeSlideUp 0.8s;
+}
+
+/* INPUT */
+input{
+    width:90%;
+    padding:10px;
+    margin:10px 0;
+    opacity:0;
+    animation: fadeSlideUp 0.6s forwards;
+}
+
+input:nth-child(2){animation-delay:0.2s;}
+input:nth-child(3){animation-delay:0.4s;}
+
+/* BUTTON */
+button{
+    padding:10px;
+    margin:5px;
+    opacity:0;
+    animation: fadeSlideUp 0.6s forwards;
+}
+
+button:nth-child(6){animation-delay:0.6s;}
+button:nth-child(7){animation-delay:0.7s;}
+button:nth-child(8){animation-delay:0.8s;}
+button:nth-child(9){animation-delay:0.9s;}
+
+</style>
+
+<script>
+function hitung(op){
+let a=parseFloat(document.getElementById("a").value);
+let b=parseFloat(document.getElementById("b").value);
+let h;
+
+if(op==='+') h=a+b;
+if(op==='-') h=a-b;
+if(op==='*') h=a*b;
+if(op==='/') h=a/b;
+
+document.getElementById("hasil").value=h;
+}
+</script>
+
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="pendidikan.html">Pendidikan</a>
+<a href="skil.html">Skill</a>
+<a href="layout.html">Layout</a>
+<a href="form.html">Form</a>
+<a href="kalkulator.html">Kalkulator</a>
+</nav>
+
+<div class="container">
+
+<h2>Kalkulator</h2>
+
+<input type="number" id="a" placeholder="Angka 1">
+<input type="number" id="b" placeholder="Angka 2">
+
+<br>
+
+<button onclick="hitung('+')">+</button>
+<button onclick="hitung('-')">-</button>
+<button onclick="hitung('*')">*</button>
+<button onclick="hitung('/')">/</button>
+
+<br>
+
+<input type="text" id="hasil" readonly placeholder="Hasil">
+
+</div>
+
+</body>
+</html>
